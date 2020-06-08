@@ -17,7 +17,7 @@ us with easier iteration, reading and manipulating yaml files, pre-defined
 1. We use Travis-CI for continuous integration. A pre-configured and working
 `.travis.yaml` is part of this repo.
 1. We use Pantheon for hosting. A `ddev robo deploy:pantheon` will take care of
-deployments. See more under "Pantheon settings" section.
+deployments. See more under ["Deploy to Pantheon"](#deploy-to-pantheon) section.
 
 ## Requirements
 
@@ -117,9 +117,9 @@ Then you can deploy with
 After first deploy, you will want to install the site. We've noticed that
 it gives an error, but after cache-clear, the site can be accessed.
 
-    terminus drush <your-site>.dev -- site-install server -y --existing-config
-    terminus drush <your-site>.dev -- cr
-    terminus drush <your-site>.dev -- uli
+    ddev exec terminus drush <your-site>.dev -- site-install server -y --existing-config
+    ddev exec terminus drush <your-site>.dev -- cr
+    ddev exec terminus drush <your-site>.dev -- uli
 
 ## Deploy Environments
 

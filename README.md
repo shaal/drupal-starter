@@ -17,7 +17,7 @@ us with easier iteration, reading and manipulating yaml files, pre-defined
 1. We use Travis-CI for continuous integration. A pre-configured and working
 `.travis.yaml` is part of this repo.
 1. We use Pantheon for hosting. A `ddev robo deploy:pantheon` will take care of
-deployments. See more under "Pantheon settings" section.
+deployments. See more under ["Deploy to Pantheon"](#deploy-to-pantheon) section.
 
 ## Requirements
 
@@ -86,7 +86,7 @@ In short, create a [Machine token](https://dashboard.pantheon.io/users/#account/
 Then, you can create a new site in Pantheon which can also be done with a
 [terminus command](https://pantheon.io/docs/guides/drupal8-commandline):
 
-    ddev exec terminus site:create my-site "My Site" "Drupal 8"
+    terminus site:create my-site "My Site" "Drupal 8"
 
 #### Change to nested docroot structure
 To allow Pantheon to work with composer managed sites and recognize the `web`
